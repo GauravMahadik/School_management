@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 app.use("/", schoolRoutes);
 
-const PORT = process.env.MYSQLPORT || 3000;
+const PORT = process.env.MYSQLPORT || 3306;
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
